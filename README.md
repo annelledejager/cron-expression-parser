@@ -5,12 +5,14 @@ cron_expression_parser parses an input cron string and expands each field to sho
 The standard cron format with five time fields (minute, hour, day of month, month, and day of week) plus a command is
 considered. Special time strings are excluded such as "@yearly".
 
-Field	        Allowed values	    Allowed special characters	Remarks
-Minutes     	0–59	            * , -
-Hours	        0–23	            * , -
-Day of month	1–31	            * , - ? L W	                ? L W only in some implementations
-Month	        1–12 or JAN–DEC	    * , -
-Day of week	    0–6 or SUN–SAT	    * , - ? L #	                ? L W only in some implementations
+```
+Field	          Allowed values      Allowed special characters	Remarks
+Minutes     	  0–59	              * , -
+Hours	          0–23	              * , -
+Day of month	  1–31	              * , - ? L W	                ? L W only in some implementations
+Month	          1–12 or JAN–DEC     * , -
+Day of week       0–6 or SUN–SAT      * , - ? L #	                ? L W only in some implementations
+```
 
 https://en.wikipedia.org/wiki/Cron#CRON_expression
 
@@ -37,11 +39,15 @@ https://en.wikipedia.org/wiki/Cron#CRON_expression
     Create a virtual environment and activate it. Run the following command from within the project root directory to
     install all required packages.
 
+```
   $ pip install -r requirements.txt
+```
 
   - To run all tests, run the following command in the project root directory after activating the virtual environment.
 
+```
   $ python run_tests.py
+```
 
 ## Improvements
 
